@@ -42,7 +42,7 @@ for mu in frange(0,2,2/D):
     L_matrix = np.zeros((2 * N + 1, 2 * N + 1), dtype=np.complex_)
     for n in range(-N, N+1):
         for m in range(-N, N+1):
-            L_matrix[n+N, m+N] = f1_vec[N+(n-m)]*(1j*(mu + 2*m))**2 + f2_vec[N+(n-m)]
+            L_matrix[n+N, m+N] = f1_vec[2*N+(n-m)]*(1j*(mu + 2*m))**2 + f2_vec[2*N+(n-m)]
     evals = np.append(evals, np.linalg.eigvals(L_matrix))
 
 plt.figure()
