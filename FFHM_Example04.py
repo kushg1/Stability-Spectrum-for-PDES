@@ -28,30 +28,35 @@ def frange(start, stop, step):
         yield i
         i += step
 
-def fourier_coeffs(fun, modes):
-    cosines = np.zeros(modes, dtype=np.float_)
-    sines = np.zeros(modes, dtype=np.float)
-    output = np.zeros(2*modes + 1, dtype=np.complex_)
+def fourier_coeffs(fun, modes, period):
+    cosines = np.zeros(modes+1, dtype=np.float_)
+    sines = np.zeros(modes+1, dtype=np.float)
+    output = np.zeros(2*modes+1, dtype=np.complex_)
     output[modes], err = integrate.quad(lambda x: fun(x), -1*L/2, L/2)
-    output[modes] /= cmath.pi
-    for k in range(1, modes):
-        cosines[k], err = integrate.quad(lambda x: (fun(x) * np.cos(2*k*x)), -1*L/2, L/2)
-        sines[k], err = integrate.quad(lambda x: (fun(x) * np.sin(2*k*x)), -1*L/2, L/2)
-        output[modes-k] = (np.complex_(cosines[k]) + 1j * np.complex_(sines[k])) / L
-        output[modes+k] = (np.complex_(cosines[k]) - 1j * np.complex_(sines[k])) / L
+    output[modes] /= period
+    for k in range(1, modes+1):
+        cosines[k], err = integrate.quad(lambda x: (fun(x) * np.cos((2*cmath.pi/period)*x)), -1*period/2, period/2)
+        sines[k], err = integrate.quad(lambda x: (fun(x) * np.sin((2*cmath.pi/period)*x)), -1*period/2, period/2)
+        output[modes-k] = (np.complex_(cosines[k]) + 1j * np.complex_(sines[k])) / period
+        output[modes+k] = (np.complex_(cosines[k]) - 1j * np.complex_(sines[k])) / period
     return output
 
-f1_vec = fourier_coeffs(f1, 2*N)
-f2_vec = fourier_coeffs(f2, 2*N)
+f1_vec = fourier_coeffs(f1, 2*N, L)
+f2_vec = fourier_coeffs(f2, 2*N, L)
 evals = np.empty([], dtype=np.complex_)
 
-for mu in frange(0, 2*cmath.pi/L, 2/D):
+print(f1_vec)
+print(f2_vec)
+
+for mu in frange(-cmath.pi/L, cmath.pi/L, 2*cmath.pi/(L*D)):
     L_matrix = np.zeros((2*N + 1, 2*N + 1), dtype=np.complex_)
     for n in range(-N, N+1):
         for m in range(-N, N+1):
             factor = 1j*(mu + 2*cmath.pi*m/L)
             L_matrix[n+N, m+N] = f1_vec[2*N+(n-m)]*factor**2 + f2_vec[2*N+(n-m)]
     evals = np.append(evals, np.linalg.eigvals(L_matrix))
+
+evals = np.take(evals, range(1,evals.size))     # IMPORTANT! eliminitates spurious zeroth-index element
 
 plt.figure()
 plt.scatter(evals.real, evals.imag)
