@@ -8,7 +8,7 @@ import cmath
 import matplotlib.pyplot as plt
 
 # PARAMETERS
-q = 0.5          # coefficient of the linear operator
+q = 2            # coefficient of the linear operator
 N = 64           # number of Fourier modes
 D = 256          # number of Floquet modes
 f1 = lambda x: -1
@@ -47,4 +47,5 @@ for mu in frange(0,2,2/D):
 
 plt.figure()
 plt.scatter(evals.real, evals.imag)
+plt.xlim([0, 10])
 plt.show()
