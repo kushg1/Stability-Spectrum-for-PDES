@@ -36,7 +36,7 @@ def fourier_coeffs(fun, modes):
 
 f1_vec = fourier_coeffs(f1, 2*N)
 f2_vec = fourier_coeffs(f2, 2*N)
-evals = np.empty([], dtype=np.complex_)
+evals = np.array([], dtype=np.complex_)
 
 for mu in frange(-1,1,2/D):
     L_matrix = np.zeros((2 * N + 1, 2 * N + 1), dtype=np.complex_)
@@ -44,8 +44,6 @@ for mu in frange(-1,1,2/D):
         for m in range(-N, N+1):
             L_matrix[n+N, m+N] = f1_vec[2*N+(n-m)]*(1j*(mu + 2*m))**2 + f2_vec[2*N+(n-m)]
     evals = np.append(evals, np.linalg.eigvals(L_matrix))
-
-evals = np.take(evals, range(1,evals.size))     # IMPORTANT! eliminitates spurious zeroth-index element
 
 plt.figure()
 plt.scatter(evals.real, evals.imag)
