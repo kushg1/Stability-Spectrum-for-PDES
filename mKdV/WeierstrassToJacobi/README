@@ -1,0 +1,17 @@
+This folder contains all of the files necessary to compute the Jacobi Elliptic
+SN^2 function from the Weierstrass P function. 
+
+The .csv files, 'auxiliaryOutputTable.' and 'snSquaredOutputTable.' are for
+testing.
+'auxiliaryOutputTable.' has output of the form {g2, g3, e1, e2, e3, omega1,
+omega3, k} for g2 in range(1,1.5,0.1) and g3 in range(-0.5,0.5,0.1). It should
+be used for testing these auxiliary quantities needed to compute SN^2
+
+'snSquaredOutputTable.' has output of the form {g2, g3, x, OUTPUT} where
+OUTPUT is the expression of the WeierstrassEllipticP function in terms of
+jacobi elliptic SN function, g2 in range(1,1.5,0.1), g3 in range(-0.5,0.5,0.1)
+and x in range(1,3,0.1).
+
+The .nb file 'testsForWeierstrassToJacobi.' shows how I do this using
+Mathematica (which has its own built-in and nice algorithms). It can only be
+run on v11.3 and higher. 

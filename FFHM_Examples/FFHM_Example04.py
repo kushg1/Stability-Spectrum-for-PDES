@@ -15,8 +15,8 @@ import matplotlib.pyplot as plt
 # PARAMETERS
 q = 2                    # coefficient of the linear operator
 N = 64                   # number of Fourier modes
-D = 256                  # number of Floquet modes
-k = 0.3                  # only used for elliptic functions!
+D = 128                  # number of Floquet modes
+k = 0.9                  # only used for elliptic functions!
 L = 2*sp.ellipk(k**2)    # period
 f1 = lambda x: -1
 f2 = lambda x: 6*(k**2)*(sp.ellipj(x, k**2)[0])**2     # sn(x|k); cf. docs for special.ellipj
@@ -46,7 +46,7 @@ f1_vec = fourier_coeffs(f1, 2*N, L)
 f2_vec = fourier_coeffs(f2, 2*N, L)
 evals = np.array([], dtype=np.complex_)
 
-print(f2_vec)
+
 
 for mu in frange(-cmath.pi/L, cmath.pi/L, 2*cmath.pi/(L*D)):
     L_matrix = np.zeros((2*N + 1, 2*N + 1), dtype=np.complex_)

@@ -1,0 +1,159 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5044,        149]
+NotebookOptionsPosition[      4447,        131]
+NotebookOutlinePosition[      4779,        146]
+CellTagsIndexPosition[      4736,        143]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.734191477464188*^9, 
+  3.734191482419607*^9}},ExpressionUUID->"d3c318cf-141d-4986-b4c0-\
+d7f7f97d6aa7"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"weierstrassToJacobisnSquared", "[", 
+    RowBox[{
+    "z_", ",", "\[Omega]1_", ",", "\[Omega]3_", ",", "k_", ",", "e3_"}], 
+    "]"}], ":=", 
+   RowBox[{"e3", " ", "+", " ", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"EllipticK", "[", 
+         RowBox[{"k", "^", "2"}], "]"}], "*", 
+        RowBox[{"k", "/", "\[Omega]1"}]}], ")"}], "^", "2"}], " ", "*", 
+     RowBox[{
+      RowBox[{"JacobiSN", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"EllipticK", "[", 
+          RowBox[{"k", "^", "2"}], "]"}], "*", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"z", "-", "\[Omega]3"}], ")"}], "/", "\[Omega]1"}]}], ",", 
+        
+        RowBox[{"k", "^", "2"}]}], "]"}], "^", "2"}]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"test", "[", 
+   RowBox[{"xlist_", ",", "g2_", ",", "g3_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "\[Omega]1", ",", "\[Omega]3", ",", "e1", ",", "e2", ",", "e3", ",", 
+      "k"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\[Omega]1", ",", "\[Omega]3"}], "}"}], "=", 
+      RowBox[{
+       RowBox[{"WeierstrassHalfPeriods", "[", 
+        RowBox[{"{", 
+         RowBox[{"g2", ",", "g3"}], "}"}], "]"}], "//", "N"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"e1", ",", "e2", ",", "e3"}], "}"}], "=", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"WeierstrassE1", "[", 
+          RowBox[{"{", 
+           RowBox[{"g2", ",", "g3"}], "}"}], "]"}], ",", 
+         RowBox[{"WeierstrassE2", "[", 
+          RowBox[{"{", 
+           RowBox[{"g2", ",", "g3"}], "}"}], "]"}], ",", 
+         RowBox[{"WeierstrassE3", "[", 
+          RowBox[{"{", 
+           RowBox[{"g2", ",", "g3"}], "}"}], "]"}]}], "}"}], "//", "N"}]}], 
+     ";", "\[IndentingNewLine]", 
+     RowBox[{"k", " ", "=", " ", 
+      RowBox[{"Sqrt", "[", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"e2", "-", "e3"}], ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{"e1", "-", "e3"}], ")"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"weierstrassToJacobisnSquared", "[", 
+      RowBox[{
+      "xlist", ",", "\[Omega]1", ",", "\[Omega]3", ",", "k", ",", "e3"}], 
+      "]"}]}]}], "\[IndentingNewLine]", "]"}]}]}], "Input",
+ CellChangeTimes->{{3.734191579061*^9, 3.734191605536586*^9}, {
+   3.7341916861527863`*^9, 3.7341916896370497`*^9}, {3.73419183870046*^9, 
+   3.734191876689454*^9}, 3.734191934541833*^9, {3.734312589298172*^9, 
+   3.734312628003504*^9}, {3.734312674746129*^9, 3.7343126922833023`*^9}, {
+   3.734312732836097*^9, 3.734312773041099*^9}, {3.734312804725691*^9, 
+   3.734313095840127*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"64c77109-7cd6-4dd5-abab-423a5f6b30e7"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"test", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"-", "1"}], ",", "1", ",", "3"}], "}"}], ",", "11", ",", "3"}], 
+   "]"}], "//", "Chop"}]], "Input",
+ CellChangeTimes->{{3.734312630890957*^9, 3.734312648948958*^9}, {
+  3.734313099101542*^9, 3.7343131222683287`*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"7a577bf5-aa81-4e39-8642-ee34a56a8699"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1.7865657252075948`", ",", "1.7865657252075948`", ",", 
+   "1.8335217663072534`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.7343126835889874`*^9, 3.734312694348838*^9}, 
+   3.73431274129607*^9, 3.734312775331696*^9, {3.7343131085941067`*^9, 
+   3.734313122520713*^9}},
+ CellLabel->"Out[20]=",ExpressionUUID->"20e4bb94-bd6c-4051-a487-3a00cdc15302"]
+}, Open  ]]
+},
+WindowSize->{768, 848},
+WindowMargins->{{Automatic, 0}, {0, Automatic}},
+FrontEndVersion->"11.3 for Linux x86 (64-bit) (March 6, 2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 152, 3, 31, "Input",ExpressionUUID->"d3c318cf-141d-4986-b4c0-d7f7f97d6aa7"],
+Cell[713, 25, 2898, 79, 262, "Input",ExpressionUUID->"64c77109-7cd6-4dd5-abab-423a5f6b30e7"],
+Cell[CellGroupData[{
+Cell[3636, 108, 402, 10, 31, "Input",ExpressionUUID->"7a577bf5-aa81-4e39-8642-ee34a56a8699"],
+Cell[4041, 120, 390, 8, 35, "Output",ExpressionUUID->"20e4bb94-bd6c-4051-a487-3a00cdc15302"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
