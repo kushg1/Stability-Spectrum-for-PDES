@@ -1,5 +1,5 @@
 # mKdV_spectrum_01.py
-# Last edited by Ryan on 5/5/18 at 5:45 pm
+# Last edited by Ryan on 5/8/18 at 11:30 am
 
 # MODULES
 import numpy as np
@@ -10,14 +10,12 @@ import cmath
 import matplotlib.pyplot as plt
 
 # PARAMETERS
-N = 81                   # number of Fourier modes
-D = 49                   # number of Floquet modes
-k = 0.7                  # only used for elliptic functions!
-L = 4*sp.ellipk(k**2)    # period
-
+N = 64                       # number of Fourier modes
+D = 49                       # number of Floquet modes
+k = 1.8                      # elliptic modulus
+L = 2*sp.ellipk((1/k)**2)    # period
 V = 10
-print(cmath.sqrt(V/(2*k**2-1)))
-U = lambda y: k*cmath.sqrt(V/(2*k**2-1))*sp.ellipj(np.real(cmath.sqrt(V/(2*k**2-1)))*y, k**2)[1]
+U = lambda y: k*cmath.sqrt(V/(2*k**2-1))*sp.ellipj(np.real(k*cmath.sqrt(V/(2*k**2-1)))*y, (1/k)**2)[2]
 U_prime = lambda y: msc.derivative(U,y)
 
 f3 = lambda y: -1
@@ -36,13 +34,16 @@ def fourier_coeffs(fun, modes, period):
     cosines = np.zeros(modes+1, dtype=np.float_)
     sines = np.zeros(modes+1, dtype=np.float)
     output = np.zeros(2*modes+1, dtype=np.complex_)
-    output[modes]= integrate.quad(lambda x: np.real(fun(x)), -1*L/2, L/2)[0]
+    output[modes], err = integrate.quad(lambda x: np.real(fun(x)), -1*L/2, L/2)
     output[modes] /= period
     for k in range(1, modes+1):
-        cosines[k] = integrate.quad(lambda x: np.real(fun(x) * np.cos((2*k*cmath.pi/period)*x)), -1*period/2, period/2)[0]
-        sines[k]= integrate.quad(lambda x: np.real(fun(x) * np.sin((2*k*cmath.pi/period)*x)), -1*period/2, period/2)[0]
+        cosines[k], err = integrate.quad(lambda x: np.real(fun(x) * np.cos((2*k*cmath.pi/period)*x)), -1*period/2, period/2)
+        sines[k], err = integrate.quad(lambda x: np.real(fun(x) * np.sin((2*k*cmath.pi/period)*x)), -1*period/2, period/2)
         output[modes-k] = (np.complex_(cosines[k]) + 1j * np.complex_(sines[k])) / period
         output[modes+k] = (np.complex_(cosines[k]) - 1j * np.complex_(sines[k])) / period
+    print('sines: ' + str(sines))
+    print('cosines: ' + str(cosines))
+    print('return: ' + str(output))
     return output
 
 # PROGRAM
