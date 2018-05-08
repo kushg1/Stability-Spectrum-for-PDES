@@ -34,8 +34,16 @@ def omega1(g2, g3, e1):
 def omega3(g2, g3, e3):
     return np.complex_(2j * integrate.quad(lambda z: np.real(1 / cmath.sqrt(4*z**3 - g2*z + g3)), -1*e3, np.inf)[0])
 
-def weier_k(e1, e2, e3):
+def weier_to_jacobi_k(e1, e2, e3):
     return cmath.sqrt((e2-e3)/(e1-e3))
+
+def weier_to_jacobi_y(z, e1, e3):
+    return z * cmath.sqrt(e1 - e3)
+
+def weierstrass_to_jacobi(z, g2, g3):
+    e_vec = weierstrass_Es(g2, g3)
+    return (weier_to_jacobi_y(z, e_vec[0], e_vec[2]), weier_to_jacobi_k(e_vec[0], e_vec[1], e_vec[2]))
+
 
 results = []
 
@@ -45,7 +53,7 @@ for g2 in frange(1.0,1.6,0.1):
         weier_Es = weierstrass_Es(g2, g3)
         w1 = omega1(g2, g3, weier_Es[0])
         w3 = omega3(g2, g3, weier_Es[2])
-        k_val = weier_k(weier_Es[0], weier_Es[1], weier_Es[2])
+        k_val = weier_to_jacobi_k(weier_Es[0], weier_Es[1], weier_Es[2])
         r.append([g2, g3, weier_Es[0], weier_Es[1], weier_Es[2], w1, w3, k_val])
     print(len(r))
     results.append(r)
