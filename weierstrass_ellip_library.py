@@ -37,26 +37,54 @@ def omega3(g2, g3, e3):
 def weier_k(e1, e2, e3):
     return cmath.sqrt((e2-e3)/(e1-e3))
 
-results = np.array([])
+results = []
 
 for g2 in frange(1.0,1.6,0.1):
-    for g3 in (-0.5,0.6,0.1):
+    r = []
+    for g3 in frange(-0.5,0.6,0.1):
         weier_Es = weierstrass_Es(g2, g3)
         w1 = omega1(g2, g3, weier_Es[0])
         w3 = omega3(g2, g3, weier_Es[2])
         k_val = weier_k(weier_Es[0], weier_Es[1], weier_Es[2])
-        results = np.append(results, [g2, g3, weier_Es[0], weier_Es[1], weier_Es[2], w1, w3, k_val])
+        r.append([g2, g3, weier_Es[0], weier_Es[1], weier_Es[2], w1, w3, k_val])
+    print(len(r))
+    results.append(r)
+    print(len(results))
 
-print(results)
+    
+    # if results.shape[0] == 0:
+    #     print("R: " + str(r.shape))
+    #     print("Results: " + str(results.shape))
+    #     results = np.append(results, r)
+    # else: 
+    #     print("R: " + str(r.shape))
+    #     print("Results: " + str(results.shape))
+    #     results = np.append([results], [r], axis=0)
+
+# print(results)
+
+results = np.array(results)
+
+print(results.shape)
+# results = results.reshape(results, (24, -1))
+# print(results.shape)
 
 rownum = 0
 colnum = 0
 
-# with open('auxiliaryOutputTable.csv', 'rb', encoding='utf8') as f:
-#     reader = csv.reader(f)
-#     for row in reader:
-#         for col in row:
-#             print(abs(col - results[rownum][colnum]) < 10**(-5))
-#         colnum = 0
-#         rownum += 1
+with open('auxiliaryOutputTable.csv') as f:
+    reader = csv.reader(f)
+    # print(len(reader))
+    for row in reader:
+        for col in row:
+            print(col)
+            # print(colnum)
+            # print(results.shape)
+            x = results[rownum][colnum]
+            print(abs(col - x) < 10**(-5))
+            colnum += 1
+        # print(row)
+        colnum = 0
+        rownum += 1
+    # print(rownum)
 
