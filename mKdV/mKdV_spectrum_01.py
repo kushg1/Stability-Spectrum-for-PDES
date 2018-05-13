@@ -1,4 +1,4 @@
-# mKdV_spectrum_01.py
+## mKdV_spectrum_01.py
 
 # MODULES
 import numpy as np
@@ -12,17 +12,24 @@ import weierstrass_ellip_library as weier
 # PARAMETERS
 N = 81                       # number of Fourier modes
 D = 49                       # number of Floquet modes
-E = 1
-V = 10
+E = 1.
+V = 10.
 y0 = 0
 C = 0                  # try: np.sqrt((8*V**3)/108)*1.1
 g2 = 1.0
 g3 = 0.1
 
 k = 0.8
-U = lambda y: k * np.sqrt(V/(2*k**2 - 1)) * scipy.special.ellipj(np.sqrt(V/(2*k**2 - 1))*y, k**2)[1]
-U_prime = lambda y: scipy.misc.derivative(U,y)
-L = 4*scipy.special.ellipk(k**2)
+sn = lambda y, k: scipy.special.ellipj(y,k**2)[0];
+cn = lambda y, k: scipy.special.ellipj(y,k**2)[1];
+dn = lambda y, k: scipy.special.ellipj(y,k**2)[2];
+
+mult_factor = np.sqrt(V/(2*k**2-1)); 
+
+U = lambda y: k * mult_factor * cn(mult_factor*y,k)
+U_prime = lambda y: - k*mult_factor**2 * sn(mult_factor*y,k) *\
+                        dn(mult_factor*y,k)
+L = 4*scipy.special.ellipk(k**2)/mult_factor
 
 # e1, e2, e3 = weier.weierstrass_Es(g2,g3)
 # fact = lambda y: 2*weier.P(e1, e2, e3, 0.5*(y+y0)) - V/3
@@ -34,9 +41,11 @@ L = 4*scipy.special.ellipk(k**2)
 
 
 # READ THE COMMENTS!
+# f(j) is the j-th term in the expression Sum[ f(j)*\partial_y^j], i.e. it is
+# the coefficient of the j-th derivative.
 f3 = lambda y: -1
 f2 = lambda y: 0
-f1 = lambda y: V + 6*U(y)**2            # CHECK THE SIGN OF V!!!!!
+f1 = lambda y: V - 6*U(y)**2            # CHECK THE SIGN OF V!!!!!
 f0 = lambda y: -12*U(y)*U_prime(y)      # replace with this: lambda y: -12*U(y)*U_prime(y)
 
 # FUNCTIONS
@@ -78,5 +87,6 @@ for mu in frange(-cmath.pi/L, cmath.pi/L, 2*cmath.pi/(L*D)):
 
 plt.figure()
 plt.scatter(evals.real, evals.imag)
-# plt.xlim([0, 10])
+plt.xlim([-150, 150])
+plt.ylim([-200, 200])
 plt.show()
