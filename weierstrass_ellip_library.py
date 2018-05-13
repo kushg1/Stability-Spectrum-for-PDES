@@ -1,7 +1,7 @@
 import numpy as np
 import scipy.integrate as integrate
+import scipy.special
 import cmath
-import csv
 # from mpmath import sqrt, mpc, sin, ellipfun, mpf
 import scipy
 
@@ -42,15 +42,12 @@ for g2 in frange(1.0,1.6,0.1):
         w3 = omega3(g2, g3, weier_Es[2])
         k_val = weier_to_jacobi_k(weier_Es[0], weier_Es[1], weier_Es[2])
         r.append([g2, g3, weier_Es[0], weier_Es[1], weier_Es[2], w1, w3, k_val])
-    print(len(r))
     results.append(r)
-    print(len(results))
 
 # TODO: WORKS IF e1, e2, e3 ARE REAL
 def P(e1, e2, e3, z):
     Delta = 16 * ((e2 - e3) * (e3 - e1) * (e1 - e2)) ** 2
     m = np.real((e2 - e3) / (e1 - e3))
-    print(np.sqrt(m))
     if Delta > 0:
         # TODO: Shouldn't necessarily be real
         zs = np.real(np.lib.scimath.sqrt(e1 - e3) * z)
@@ -74,30 +71,27 @@ def PPrime(e1, e2, e3, z):
     m = np.real((e2 - e3) / (e1 - e3))
     if Delta > 0:
         zs = np.lib.scimath.sqrt(e1 - e3) * z
-        print(type(zs))
-        print(type(m))
-        ellip = scipy.special.ellipj(zs, m)
+        ellip = scipy.special.ellipj(np.real(zs), m)
         sn, cn, dn = ellip[0], ellip[1], ellip[2]
         retval = -2 * (np.lib.scimath.sqrt((e1 - e3) ** 3)) * cn * dn / (sn ** 3)
     elif Delta < 0:
         H2 = 2 * (e2 ** 2) + e1 * e3
         zp = 2 * z * np.lib.scimath.sqrt(H2)
-        ellip = scipy.special.ellipj(zp, m)
+        ellip = scipy.special.ellipj(np.real(zp), m)
         sn, cn, dn = ellip[0], ellip[1], ellip[2]
         retval = -4 * (np.lib.scimath.sqrt(H2 ** 3)) * sn * dn / ((1 - cn) ** 2)
 
     return retval
 
-
-def main():
-    z = 1
-    g2 = 1
-    g3 = 0.1
-    weier = weierstrass_Es(g2, g3)
-    print(weier)
-    p = P(weier[0], weier[1], weier[2], z)
-
-    print(p)
+# def main():
+#     z = 1
+#     g2 = 1
+#     g3 = 0.1
+#     weier = weierstrass_Es(g2, g3)
+#     print(weier)
+#     p = P(weier[0], weier[1], weier[2], z)
+#
+#     print(p)
 
 
     # results = []
@@ -149,5 +143,5 @@ def main():
     #         rownum += 1
     #     # print(rownum)
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
