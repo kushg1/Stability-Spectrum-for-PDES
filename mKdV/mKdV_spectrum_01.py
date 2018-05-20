@@ -39,7 +39,7 @@ denom = lambda y: (fact(y) - 2*np.sqrt(-2*E)) * (fact(y) + 2*np.sqrt(-2*E))
 PPrime = lambda y: weier.PPrime(e1, e2, e3, 0.5*(y+y0))
 PPrimePrime = lambda y: 6*(weier.P(e1, e2, e3, 0.5*(y+y0)))**2 - 0.5*g2
 U = lambda y: (np.sqrt(2*E) * PPrime(y) + C * 2 * fact(y)) / denom(y)
-U_prime = lambda y: (np.sqrt(2*E) * (0.5*PPrimePrime(y)*denom(y) - PPrime(y)**2*fact(y)) + C*PPrime(y)) / (denom(y))**2
+U_prime = lambda y: (np.sqrt(2*E) * (0.5*PPrimePrime(y)*denom(y) - (PPrime(y)**2)*fact(y)) + C*PPrime(y)) / (denom(y))**2
 L = 2*omega1
 
 # f(j) is the j-th term in the expression Sum[ f(j)*\partial_y^j], i.e. it is
@@ -56,10 +56,12 @@ def frange(start, stop, step):
         yield i
         i += step
 
+
+# CHECK THE BOUNDS!!! Does it need to be from -1 to 1, rather than 0 to 2?
 def complex_quad(fun, bound):
     real = lambda x: np.real(fun(x))
     imag = lambda x: np.imag(fun(x))
-    return bound * (integrate.quad(real, -1, 1)[0] + 1j * integrate.quad(imag, -1, 1)[0])
+    return bound * (integrate.quad(real, 0.001, 2.)[0] + 1j * integrate.quad(imag, 0.001, 2.)[0])
 
 def fourier_coeffs(fun, modes, period):
     cosines = np.zeros(modes+1, dtype=np.float_)
