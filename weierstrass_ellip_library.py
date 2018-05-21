@@ -41,6 +41,8 @@ for g2 in frange(1.0,1.6,0.1):
         w1 = omega1(g2, g3, weier_Es[0])
         w3 = omega3(g2, g3, weier_Es[2])
         k_val = weier_to_jacobi_k(weier_Es[0], weier_Es[1], weier_Es[2])
+        # print([g2, g3, weier_Es[0], weier_Es[1], weier_Es[2], w1, w3, k_val])
+        # print("")
         r.append([g2, g3, weier_Es[0], weier_Es[1], weier_Es[2], w1, w3, k_val])
     results.append(r)
 
