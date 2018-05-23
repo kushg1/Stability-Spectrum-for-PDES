@@ -6,7 +6,6 @@ import scipy.special
 import scipy.misc
 import cmath
 import matplotlib.pyplot as plt
-from mKdV.WeierstrassToJacobi import weierstrass_ellip_library as weier
 import importlib
 
 cmp = importlib.import_module('complex_integrator')
@@ -76,8 +75,8 @@ def frange(start, stop, step):
         i += step
 
 # PROGRAM
-f_hats = np.array([fs.fourier_coeffs(f3, 2*N, L), fs.fourier_coeffs(f2, 2*N, L), fs.fourier_coeffs(f1, 2*N, L),
-                   fs.fourier_coeffs(f0, 2*N, L)])
+f_hats = np.array([fs.fourier_coeffs(f3, N, L), fs.fourier_coeffs(f2, N, L), fs.fourier_coeffs(f1, N, L),
+                   fs.fourier_coeffs(f0, N, L)])
 evals = np.array([], dtype=np.complex_)
 
 mu_vals = []
@@ -88,7 +87,7 @@ for mu in frange(-cmath.pi/L, cmath.pi/L, 2*cmath.pi/(L*D)):
     for n in range(-N, N+1):
         for m in range(-N, N+1):
             factor = np.array([(1j*(mu + 2*cmath.pi*m/L))**(3-p) for p in range(0,4)], dtype=np.complex_)
-            idx = 2*N+(n-m)
+            idx = N+(n-m)
             L_matrix[n+N, m+N] = np.dot(f_hats[:,idx], factor)
     eigs = np.linalg.eigvals(L_matrix)
     for e in eigs:
