@@ -10,62 +10,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mKdV_spectrum_01.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/functions_and_computations/mKdV_spectrum_01.py">
+    <leaf>
+      <file leaf-file-name="main_program.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/functions_and_computations/main_program.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="109" column="71" lean-forward="true" selection-start-line="109" selection-start-column="71" selection-end-line="109" selection-end-column="71" />
+            <state relative-caret-position="256">
+              <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
               <folding>
-                <element signature="e#33#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="complex_integrator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions_and_computations/complex_integrator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="50" lean-forward="true" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fourier_series.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions_and_computations/fourier_series.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="debug_file.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions_and_computations/debug_file.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FFHM_V2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions_and_computations/FFHM_V2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="27" column="72" lean-forward="true" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#528#544#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,20 +55,56 @@
         <option value="$PROJECT_DIR$/mKdV/debug_file.py" />
         <option value="$PROJECT_DIR$/mKdV/FFHM_V2.py" />
         <option value="$PROJECT_DIR$/functions_and_computations/mKdV_spectrum_01.py" />
+        <option value="$PROJECT_DIR$/functions_and_computations/solution_forms_for_C_equals_zero.py" />
+        <option value="$PROJECT_DIR$/functions_and_computations/weierstrass_solution_forms.py" />
+        <option value="$PROJECT_DIR$/functions_and_computations/debug_file.py" />
+        <option value="$PROJECT_DIR$/functions_and_computations/main_program.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-17" />
-    <option name="y" value="172" />
-    <option name="width" value="1919" />
-    <option name="height" value="1019" />
+    <option name="x" value="-18" />
+    <option name="y" value="171" />
+    <option name="width" value="1920" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Project Files" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+              <item name="FFHM_Examples" type="cbb8eebc:String" user="FFHM_Examples" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+              <item name="functions_and_computations" type="cbb8eebc:String" user="functions_and_computations" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+              <item name="mKdV" type="cbb8eebc:String" user="mKdV" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+              <item name="mKdV" type="cbb8eebc:String" user="mKdV" />
+              <item name="WeierstrassToJacobi" type="cbb8eebc:String" user="WeierstrassToJacobi" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,33 +135,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-              <item name="functions_and_computations" type="cbb8eebc:String" user="functions_and_computations" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-              <item name="mKdV" type="cbb8eebc:String" user="mKdV" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-              <item name="mKdV" type="cbb8eebc:String" user="mKdV" />
-              <item name="WeierstrassToJacobi" type="cbb8eebc:String" user="WeierstrassToJacobi" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -198,8 +159,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.mKdV_spectrum_01 (1)">
-    <configuration name="FFHM_Example03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.main_program">
+    <configuration name="debug_file (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Stability-Spectrum-for-PDES" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -207,11 +168,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functions_and_computations" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FFHM_Example03.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions_and_computations/debug_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -271,7 +232,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="weierstrass_ellip_library" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main_program" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Stability-Spectrum-for-PDES" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,30 +240,30 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functions_and_computations" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\rbush\Documents\Stability-Spectrum-for-PDES\mKdV\WeierstrassToJacobi\weierstrass_ellip_library.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions_and_computations/main_program.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.FFHM_Example03" />
       <item itemvalue="Python.mKdV_spectrum_01" />
-      <item itemvalue="Python.weierstrass_ellip_library" />
       <item itemvalue="Python.mKdV_spectrum_01 (1)" />
       <item itemvalue="Python.debug_file" />
+      <item itemvalue="Python.debug_file (1)" />
+      <item itemvalue="Python.main_program" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main_program" />
+        <item itemvalue="Python.debug_file (1)" />
         <item itemvalue="Python.mKdV_spectrum_01 (1)" />
         <item itemvalue="Python.debug_file" />
         <item itemvalue="Python.mKdV_spectrum_01" />
-        <item itemvalue="Python.weierstrass_ellip_library" />
-        <item itemvalue="Python.FFHM_Example03" />
       </list>
     </recent_temporary>
   </component>
@@ -321,8 +282,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15421304" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15421304" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50158983" side_tool="true" weight="0.28085867" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3291592" />
@@ -342,22 +304,22 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49841017" visible="true" weight="0.28801432" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15421304" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3291592" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49841017" visible="true" weight="0.28801432" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892665" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291592" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50158983" side_tool="true" weight="0.28085867" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3291592" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -395,77 +357,17 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_elliptic.py" />
+    <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
+    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
+    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_elliptic.py" />
+    <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
+    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_elliptic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3978">
-          <caret line="234" column="12" lean-forward="true" selection-start-line="234" selection-start-column="12" selection-end-line="234" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_elliptic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="37" lean-forward="true" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
-    <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
     <entry file="file://$PROJECT_DIR$/FFHM_Example02.py" />
     <entry file="file://$PROJECT_DIR$/FFHM_Example03.py" />
@@ -476,39 +378,12 @@
     <entry file="file://$PROJECT_DIR$/FFHM_Example02.py" />
     <entry file="file://$PROJECT_DIR$/FFHM_Example03.py" />
     <entry file="file://$PROJECT_DIR$/FFHM_Example04.py" />
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="47" column="100" lean-forward="true" selection-start-line="47" selection-start-column="100" selection-end-line="47" selection-end-column="100" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="41" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
     <entry file="file://$PROJECT_DIR$/FFHM_Example02.py" />
     <entry file="file://$PROJECT_DIR$/FFHM_Example03.py" />
@@ -526,24 +401,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_elliptic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3254">
-          <caret line="240" column="22" lean-forward="true" selection-start-line="240" selection-start-column="22" selection-end-line="240" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_elliptic.py" />
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/matplotlib/axes/_axes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -551,23 +411,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions_and_computations/complex_integrator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="50" lean-forward="true" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions_and_computations/getfourier.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="51" lean-forward="true" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions_and_computations/FFHM_V2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="27" column="72" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions_and_computations/complex_integrator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions_and_computations/debug_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions_and_computations/weierstrass_solution_forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -575,38 +450,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions_and_computations/debug_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="33" column="57" selection-start-line="33" selection-start-column="57" selection-end-line="33" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions_and_computations/FFHM_V2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="27" column="72" lean-forward="true" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions_and_computations/mKdV_spectrum_01.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="109" column="71" lean-forward="true" selection-start-line="109" selection-start-column="71" selection-end-line="109" selection-end-column="71" />
+        <state relative-caret-position="102">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions_and_computations/solution_forms_for_C_equals_zero.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions_and_computations/main_program.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="64" column="26" lean-forward="true" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
           <folding>
-            <element signature="e#33#51#0" expanded="true" />
+            <element signature="e#528#544#0" expanded="true" />
           </folding>
         </state>
       </provider>

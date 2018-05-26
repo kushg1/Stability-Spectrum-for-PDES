@@ -1,3 +1,10 @@
+# This file is where "all the stuff happens." In short, the main computations currently being examined
+# will be done here. After a solution's spectrum has been examined and no further computations need
+# be performed, the relevant code (definition of U(y), special identities used to make the computations
+# tractable, etc.) should (if necessary/appropriate) be saved in an appropriately-named file. Most of the
+# time, solution_forms_for_C_equals_zero.py or weierstrass_solution_forms.py will be suitable for thus
+# purpose.
+
 import importlib
 import numpy as np
 import scipy.special
@@ -16,34 +23,28 @@ def frange(start, stop, step):
         yield i
         i += step
 
-# START DEBUGGING HERE
-
+# Parameters
 N = 100
 D = 49
 k = 0.6
+k_prime = np.sqrt(1.-k**2.)
 V = 10.
 C = 10.
 
+# Jacobi elliptic functions
+# These now take k as their second argument, NOT m!
 sn = lambda y, k: scipy.special.ellipj(y, k**2)[0]
 cn = lambda y, k: scipy.special.ellipj(y, k**2)[1]
 dn = lambda y, k: scipy.special.ellipj(y, k**2)[2]
 K = lambda k: scipy.special.ellipk(k**2)
 
-# fact = lambda y: weier.P(e1, e2, e3, 0.5*(y+y0)) - V/3
-# denom = lambda y: (fact(y) - 2*np.sqrt(-2*E)) * (fact(y) + 2*np.sqrt(-2*E))
-# PPrime = lambda y: weier.PPrime(e1, e2, e3, 0.5*(y+y0))
-# PPrimePrime = lambda y: 6*(weier.P(e1, e2, e3, 0.5*(y+y0)))**2 - 0.5*g2
-# U = lambda y: (np.sqrt(2*E) * PPrime(y) + C * 2 * fact(y)) / denom(y)
-# U_prime = lambda y: (np.sqrt(2*E) * (0.5*PPrimePrime(y)*denom(y)
-#                      - (PPrime(y)**2)*fact(y)) + C*PPrime(y)) / (denom(y))**2
-
-
 mult_factor = np.sqrt(V/(1.-2.*k**2.))
-U = lambda y: k * mult_factor / cn(mult_factor*y, np.sqrt(1.-k**2.))
-U_prime = lambda y: k * mult_factor**2. * sn(mult_factor*y, np.sqrt(1.-k**2.)) * \
-                    dn(mult_factor*y, np.sqrt(1.-k**2.)) / cn(mult_factor*y, np.sqrt(1.-k**2.))**2.
-L = 4.*K(np.sqrt(1.-k**2.))/mult_factor
+U = lambda y: k * mult_factor / cn(mult_factor*y, k_prime)
+U_prime = lambda y: k * mult_factor**2. * sn(mult_factor*y, k_prime) * \
+                    dn(mult_factor*y, k_prime) / cn(mult_factor*y, k_prime)**2.
+L = 4.*K(k_prime)/mult_factor
 
+# Operator coefficients
 f3 = lambda y: -1
 f2 = lambda y: 0
 f1 = lambda y: V - 6*U(y)**2
@@ -60,6 +61,9 @@ plt.ylim([-200, 200])
 
 fourier_U_coeffs = fs.fourier_coeffs(U, N, L)
 fourier_U = lambda x: sum([fourier_U_coeffs[N-p] * np.exp(2j*p*cmath.pi*x/L) for p in range(-N,N+1,1)])
+
+for c in fourier_U_coeffs:
+    print(c)
 
 plt.figure(2)
 plt.plot([x for x in frange(-L,L,0.01)], [fourier_U(x) for x in frange(-L,L,0.01)])
