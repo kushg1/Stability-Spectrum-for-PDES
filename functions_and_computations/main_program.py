@@ -24,7 +24,7 @@ def frange(start, stop, step):
         i += step
 
 # Parameters
-N = 100
+N = 50
 D = 49
 k = 0.6
 k_prime = np.sqrt(1.-k**2.)
@@ -38,11 +38,11 @@ cn = lambda y, k: scipy.special.ellipj(y, k**2)[1]
 dn = lambda y, k: scipy.special.ellipj(y, k**2)[2]
 K = lambda k: scipy.special.ellipk(k**2)
 
-mult_factor = np.sqrt(V/(1.-2.*k**2.))
-U = lambda y: k * mult_factor / cn(mult_factor*y, k_prime)
-U_prime = lambda y: k * mult_factor**2. * sn(mult_factor*y, k_prime) * \
-                    dn(mult_factor*y, k_prime) / cn(mult_factor*y, k_prime)**2.
-L = 4.*K(k_prime)/mult_factor
+mult_factor = 1j*np.sqrt(V/(1.-2.*k**2.))
+U = lambda y: k * mult_factor / cn(np.float_(np.imag(mult_factor*y)), k_prime)
+U_prime = lambda y: k * mult_factor * np.float_(np.imag(mult_factor*y)) * sn(np.float_(np.imag(mult_factor*y)), k_prime) * \
+                    dn(np.float_(np.imag(mult_factor*y)), k_prime) / cn(np.float_(np.imag(mult_factor*y)), k_prime)**2.
+L = 4.*K(k_prime)/np.float_(np.imag(mult_factor))
 
 # Operator coefficients
 f3 = lambda y: -1
@@ -62,14 +62,12 @@ plt.ylim([-200, 200])
 fourier_U_coeffs = fs.fourier_coeffs(U, N, L)
 fourier_U = lambda x: sum([fourier_U_coeffs[N-p] * np.exp(2j*p*cmath.pi*x/L) for p in range(-N,N+1,1)])
 
-for c in fourier_U_coeffs:
-    print(c)
-
 plt.figure(2)
-plt.plot([x for x in frange(-L,L,0.01)], [fourier_U(x) for x in frange(-L,L,0.01)])
+plt.plot([x for x in frange(-L,L,0.01)], [np.imag(fourier_U(x)) for x in frange(-L,L,0.01)])
 
 plt.figure(3)
-plt.plot([x for x in frange(-L,L,0.01)], [U(x) for x in frange(-L,L,0.01)])
+plt.plot([x for x in frange(-L,L,0.01)], [np.imag(U(x)) for x in frange(-L,L,0.01)])
+
 
 plt.figure(4)
 plt.scatter(mu_vals, imag_eigs, color=(0.8,0.05,0.4), marker='.')

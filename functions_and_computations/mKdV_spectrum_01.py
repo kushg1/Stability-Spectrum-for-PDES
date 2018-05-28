@@ -1,4 +1,6 @@
 # mKdV_spectrum_01.py
+# this file is a graveyard for code that no longer serves any apparent purpose
+# (i.e., it all exists in other files, probably in a more elegant and efficient form)
 
 # MODULES
 import numpy as np
