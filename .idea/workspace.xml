@@ -10,12 +10,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="graph_generator.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="graph_generator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions_and_computations/graph_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+            <state relative-caret-position="51">
+              <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -23,15 +23,22 @@
       <file leaf-file-name="solution_forms_for_C_equals_zero.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions_and_computations/solution_forms_for_C_equals_zero.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+            <state relative-caret-position="205">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="weierstrass_ellip_library.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="applet_mk_I.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/functions_and_computations/applet_mk_I.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -71,6 +78,7 @@
         <option value="$PROJECT_DIR$/functions_and_computations/mKdV_spectrum_01.py" />
         <option value="$PROJECT_DIR$/functions_and_computations/solution_forms_for_C_equals_zero.py" />
         <option value="$PROJECT_DIR$/functions_and_computations/graph_generator.py" />
+        <option value="$PROJECT_DIR$/functions_and_computations/applet_mk_I.py" />
       </list>
     </option>
   </component>
@@ -85,38 +93,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-              <item name="FFHM_Examples" type="cbb8eebc:String" user="FFHM_Examples" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-              <item name="functions_and_computations" type="cbb8eebc:String" user="functions_and_computations" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-              <item name="mKdV" type="cbb8eebc:String" user="mKdV" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-              <item name="mKdV" type="cbb8eebc:String" user="mKdV" />
-              <item name="WeierstrassToJacobi" type="cbb8eebc:String" user="WeierstrassToJacobi" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,6 +123,44 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+              <item name="FFHM_Examples" type="cbb8eebc:String" user="FFHM_Examples" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+              <item name="functions_and_computations" type="cbb8eebc:String" user="functions_and_computations" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+              <item name="functions_and_computations" type="cbb8eebc:String" user="functions_and_computations" />
+              <item name="images" type="cbb8eebc:String" user="images" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+              <item name="mKdV" type="cbb8eebc:String" user="mKdV" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+              <item name="mKdV" type="cbb8eebc:String" user="mKdV" />
+              <item name="WeierstrassToJacobi" type="cbb8eebc:String" user="WeierstrassToJacobi" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,7 +185,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.graph_generator">
+  <component name="RunManager" selected="Python.applet_mk_I">
+    <configuration name="applet_mk_I" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Stability-Spectrum-for-PDES" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/functions_and_computations" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions_and_computations/applet_mk_I.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="debug_file (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Stability-Spectrum-for-PDES" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -185,24 +217,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions_and_computations/debug_file.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="debug_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Stability-Spectrum-for-PDES" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mKdV" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\rbush\Documents\Stability-Spectrum-for-PDES\functions_and_computations\debug_file.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -264,18 +278,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.mKdV_spectrum_01 (1)" />
-      <item itemvalue="Python.debug_file" />
       <item itemvalue="Python.debug_file (1)" />
       <item itemvalue="Python.main_program" />
       <item itemvalue="Python.graph_generator" />
+      <item itemvalue="Python.applet_mk_I" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.applet_mk_I" />
         <item itemvalue="Python.graph_generator" />
         <item itemvalue="Python.main_program" />
         <item itemvalue="Python.debug_file (1)" />
         <item itemvalue="Python.mKdV_spectrum_01 (1)" />
-        <item itemvalue="Python.debug_file" />
       </list>
     </recent_temporary>
   </component>
@@ -296,12 +310,12 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22257552" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22257552" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50158983" side_tool="true" weight="0.28085867" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3291592" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49841017" weight="0.24150269" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49841017" visible="true" weight="0.24150269" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3291592" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -369,6 +383,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/functions_and_computations/solution_forms_for_C_equals_zero.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
     <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
     <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_elliptic.py" />
@@ -476,23 +497,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_elliptic.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions_and_computations/solution_forms_for_C_equals_zero.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+        <state relative-caret-position="205">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions_and_computations/graph_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+        <state relative-caret-position="51">
+          <caret line="91" column="20" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions_and_computations/applet_mk_I.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
