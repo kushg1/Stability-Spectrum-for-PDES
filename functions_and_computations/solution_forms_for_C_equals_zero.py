@@ -27,7 +27,7 @@ L = 4.*K(k) / mult_factor
 mult_factor = np.sqrt(V/(2.*k**2.-1.))
 U = lambda y: k * mult_factor * cn(mult_factor*y, k_prime)
 U_prime = lambda y: -k * mult_factor**2. * sn(mult_factor*y, k_prime) * dn(mult_factor*y, k_prime)
-L = 4.*K(k) / mult_factor
+L = 4.*K(k_prime) / mult_factor
 
 # CASE 3. 1 < k, V > 0
 mult_factor = np.sqrt(V/(2.*k**2.-1.))
