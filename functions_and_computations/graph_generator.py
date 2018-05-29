@@ -67,9 +67,8 @@ for V in frange(-20., 0., 0.05):
         f0 = lambda y: -12. * U(y) * U_prime(y)
         mult_factor = np.sqrt(V / (2. * k ** 2. - 1.))
         k_prime = np.sqrt(1. - k**2.)
-        U = lambda y: k * mult_factor / cn(mult_factor * y, k_prime)
-        U_prime = lambda y: k * mult_factor ** 2. * sn(mult_factor * y, k_prime) * \
-                            dn(mult_factor * y, k_prime) / cn(mult_factor * y, k_prime) ** 2.
+        U = lambda y: k * mult_factor * cn(mult_factor * y, k_prime)
+        U_prime = lambda y: -k * mult_factor ** 2. * sn(mult_factor * y, k_prime) * dn(mult_factor * y, k_prime)
         L = 4. * K(k_prime) / mult_factor
         f_hats = np.array([fs.fourier_coeffs(f3, N, L), fs.fourier_coeffs(f2, N, L),
                            fs.fourier_coeffs(f1, N, L), fs.fourier_coeffs(f0, N, L)])
@@ -89,8 +88,8 @@ for V in frange(-20., 0., 0.05):
         plt.ylim([-5, 5])
         plt.savefig(dir + '/04mkdvC0V' + str(V) + 'k' + str(k) + '.png')
 
-for V in frange(0.05, 20.05, 0.05):
-    for k in frange(1.01, 2.01, 0.01):
+for V in frange(0.05, 20.05, 0.5):
+    for k in frange(1.01, 2.01, 0.05):
         f3 = lambda y: -1.
         f2 = lambda y: 0
         f1 = lambda y: V - 6. * U(y) ** 2.
