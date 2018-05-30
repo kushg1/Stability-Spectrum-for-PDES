@@ -2,10 +2,13 @@ import importlib
 import numpy as np
 import scipy.special
 import cmath
+import matplotlib
+matplotlib.use("Agg")
+
 import matplotlib.pyplot as plt
 import os
 
-importlib.invalidate_caches()
+# importlib.invalidate_caches()
 gf = importlib.import_module('getfourier')
 fs = importlib.import_module('fourier_series')
 hill = importlib.import_module('FFHM_V2')
@@ -62,6 +65,7 @@ for V in frange(0.5, 20.5, 0.5):
         plt.xlim([-5, 5])
         plt.ylim([-5, 5])
         plt.savefig(dir + '/img00V' + V_star + 'k' + k_star + '.png')
+        plt.close()
 
 for V in frange(-20., 0., 0.5):
     for k in frange(0.01, 1./np.sqrt(2.) - 0.04, 0.01):
@@ -96,6 +100,7 @@ for V in frange(-20., 0., 0.5):
         plt.xlim([-5, 5])
         plt.ylim([-5, 5])
         plt.savefig(dir + '/img05V' + V_star + 'k' + k_star + '.png')
+        plt.close()
 
 for V in frange(0.5, 20.5, 0.5):
     for k in frange(1.01, 2.01, 0.01):
@@ -129,3 +134,4 @@ for V in frange(0.5, 20.5, 0.5):
         plt.xlim([-5, 5])
         plt.ylim([-5, 5])
         plt.savefig(dir + '/img10V' + V_star + 'k' + k_star + '.png')
+        plt.close()
