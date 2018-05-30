@@ -26,10 +26,9 @@ def frange(start, stop, step):
 # Parameters
 N = 50
 D = 49
-k = 0.85
-k_prime = np.sqrt(1.-k**2.)
-V = 12.6
-C = 10.
+k = 1.68
+V = 19.5
+C = 0.
 
 # Jacobi elliptic functions
 # These now take k as their second argument, NOT m!
@@ -39,9 +38,9 @@ dn = lambda y, k: scipy.special.ellipj(y, k**2.)[2]
 K = lambda k: scipy.special.ellipk(k**2.)
 
 mult_factor = np.sqrt(V / (2. * k ** 2. - 1.))
-U = lambda y: k * mult_factor * cn(mult_factor * y, k)
-U_prime = lambda y: -k * mult_factor ** 2. * sn(mult_factor * y, k) * dn(mult_factor * y, k)
-L = 4. * K(k) / mult_factor
+U = lambda y: k * mult_factor * dn(k * mult_factor * y, 1./k)
+U_prime = lambda y: -1. * mult_factor ** 2. * sn(k * mult_factor * y, 1./k) * cn(k * mult_factor * y, 1./k)
+L = 2.*K(1./k) / (k * mult_factor)
 
 # Operator coefficients
 f3 = lambda y: -1
