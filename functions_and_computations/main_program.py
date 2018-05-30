@@ -54,6 +54,8 @@ evals, mu_vals, imag_eigs = hill.FFHM(L,D,f_hats,True)
 
 plt.figure(1)
 plt.scatter(evals.real, evals.imag, color=(0.05,0.75,0.5), marker='.')
+plt.xlim([-5, 5])
+plt.ylim([-5, 5])
 
 fourier_U_coeffs = fs.fourier_coeffs(U, N, L)
 fourier_U = lambda x: sum([fourier_U_coeffs[N-p] * np.exp(2j*p*cmath.pi*x/L) for p in range(-N,N+1,1)])
