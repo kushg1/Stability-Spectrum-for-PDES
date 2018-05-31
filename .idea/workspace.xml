@@ -11,11 +11,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="graph_generator.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="graph_generator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions_and_computations/graph_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="99" column="32" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
+            <state relative-caret-position="187">
+              <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="136" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="debug_file.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions_and_computations/debug_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graphics_debugger.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/functions_and_computations/graphics_debugger.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+              <folding>
+                <element signature="e#257#273#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -23,8 +47,17 @@
       <file leaf-file-name="main_program.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions_and_computations/main_program.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
+            <state relative-caret-position="477">
               <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weierstrass_solution_forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions_and_computations/weierstrass_solution_forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -68,6 +101,7 @@
         <option value="$PROJECT_DIR$/images/applet_mk_I.py" />
         <option value="$PROJECT_DIR$/functions_and_computations/main_program.py" />
         <option value="$PROJECT_DIR$/functions_and_computations/graph_generator.py" />
+        <option value="$PROJECT_DIR$/functions_and_computations/graphics_debugger.py" />
       </list>
     </option>
   </component>
@@ -82,6 +116,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+              <item name="functions_and_computations" type="cbb8eebc:String" user="functions_and_computations" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,22 +162,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-              <item name="functions_and_computations" type="cbb8eebc:String" user="functions_and_computations" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -152,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main_program">
+  <component name="RunManager" selected="Python.graphics_debugger">
     <configuration name="applet_mk_I (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Stability-Spectrum-for-PDES" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,7 +223,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="graph_generator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="graphics_debugger" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Stability-Spectrum-for-PDES" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -201,7 +235,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions_and_computations/graph_generator.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions_and_computations/graphics_debugger.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -245,18 +279,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.main_program" />
-      <item itemvalue="Python.graph_generator" />
       <item itemvalue="Python.applet_mk_I" />
       <item itemvalue="Python.jeremy_demo2" />
       <item itemvalue="Python.applet_mk_I (1)" />
+      <item itemvalue="Python.graphics_debugger" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.graphics_debugger" />
         <item itemvalue="Python.main_program" />
         <item itemvalue="Python.applet_mk_I (1)" />
         <item itemvalue="Python.applet_mk_I" />
         <item itemvalue="Python.jeremy_demo2" />
-        <item itemvalue="Python.graph_generator" />
       </list>
     </recent_temporary>
   </component>
@@ -275,16 +309,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22257552" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50158983" side_tool="true" weight="0.28085867" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3291592" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50158983" side_tool="true" weight="0.28085867" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3291592" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49841017" weight="0.24150269" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3291592" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291592" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892665" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -295,25 +328,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15421304" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49841017" visible="true" weight="0.28801432" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39892665" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291592" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50158983" side_tool="true" weight="0.28085867" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3291592" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -350,7 +364,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
     <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_elliptic.py" />
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
     <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
@@ -421,24 +434,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions_and_computations/debug_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-561">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions_and_computations/fourier_series.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions_and_computations/weierstrass_solution_forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -477,17 +476,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/functions_and_computations/weierstrass_solution_forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions_and_computations/debug_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/functions_and_computations/main_program.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
+        <state relative-caret-position="477">
           <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions_and_computations/graph_generator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="99" column="32" selection-start-line="99" selection-start-column="32" selection-end-line="99" selection-end-column="32" />
+        <state relative-caret-position="187">
+          <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="136" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions_and_computations/graphics_debugger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding>
+            <element signature="e#257#273#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
