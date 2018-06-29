@@ -30,9 +30,9 @@ dn = lambda y, k: scipy.special.ellipj(y, k**2)[2]
 K = lambda k: scipy.special.ellipk(k**2)
 
 mult_factor = np.sqrt(V/(2.*k**2.-1.))
-U = lambda y: k * mult_factor * cn(mult_factor*y, k_prime)
-U_prime = lambda y: -k * mult_factor**2. * sn(mult_factor*y, k_prime) * dn(mult_factor*y, k_prime)
-L = 4.*K(k_prime) / mult_factor
+U = lambda y: k * mult_factor * cn(mult_factor*y, k)
+U_prime = lambda y: -k * mult_factor**2. * sn(mult_factor*y, k) * dn(mult_factor*y, k)
+L = 4.*K(k) / mult_factor
 
 f3 = lambda y: -1
 f2 = lambda y: 0

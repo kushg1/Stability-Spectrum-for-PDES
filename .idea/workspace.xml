@@ -14,11 +14,8 @@
       <file leaf-file-name="main_program.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functions_and_computations/main_program.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="35" column="77" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
-              <folding>
-                <element signature="e#528#544#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="231">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -26,8 +23,11 @@
       <file leaf-file-name="debug_file.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions_and_computations/debug_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+            <state relative-caret-position="-549">
+              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,8 +35,8 @@
       <file leaf-file-name="solution_forms_for_C_equals_zero.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions_and_computations/solution_forms_for_C_equals_zero.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="697">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -44,10 +44,22 @@
       <file leaf-file-name="weierstrass_elliptic_functions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions_and_computations/weierstrass_elliptic_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1548">
-              <caret line="96" selection-start-line="96" selection-end-line="96" />
+            <state relative-caret-position="1207">
+              <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="complex_jacobi.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions_and_computations/complex_jacobi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+              <folding>
+                <element signature="e#95#113#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,18 +98,19 @@
         <option value="$PROJECT_DIR$/mKdV/FFHM_V2.py" />
         <option value="$PROJECT_DIR$/functions_and_computations/weierstrass_solution_forms.py" />
         <option value="$PROJECT_DIR$/functions_and_computations/mKdV_spectrum_01.py" />
-        <option value="$PROJECT_DIR$/functions_and_computations/solution_forms_for_C_equals_zero.py" />
         <option value="$PROJECT_DIR$/functions_and_computations/applet_mk_I.py" />
         <option value="$PROJECT_DIR$/images/applet_mk_I.py" />
         <option value="$PROJECT_DIR$/functions_and_computations/graph_generator.py" />
         <option value="$PROJECT_DIR$/functions_and_computations/graphics_debugger.py" />
-        <option value="$PROJECT_DIR$/functions_and_computations/weierstrass_elliptic_functions.py" />
-        <option value="$PROJECT_DIR$/functions_and_computations/main_program.py" />
+        <option value="$PROJECT_DIR$/functions_and_computations/solution_forms_for_C_equals_zero.py" />
         <option value="$PROJECT_DIR$/functions_and_computations/debug_file.py" />
+        <option value="$PROJECT_DIR$/functions_and_computations/weierstrass_elliptic_functions.py" />
+        <option value="$PROJECT_DIR$/functions_and_computations/complex_jacobi.py" />
+        <option value="$PROJECT_DIR$/functions_and_computations/main_program.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-18" />
     <option name="y" value="171" />
     <option name="width" value="1920" />
@@ -108,22 +121,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
-              <item name="functions_and_computations" type="cbb8eebc:String" user="functions_and_computations" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,6 +151,22 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Stability-Spectrum-for-PDES" type="cbb8eebc:String" user="Stability-Spectrum-for-PDES" />
+              <item name="functions_and_computations" type="cbb8eebc:String" user="functions_and_computations" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -178,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.debug_file">
+  <component name="RunManager" selected="Python.main_program">
     <configuration name="applet_mk_I (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Stability-Spectrum-for-PDES" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -197,7 +210,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="applet_mk_I" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="complex_jacobi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Stability-Spectrum-for-PDES" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -209,7 +222,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions_and_computations/applet_mk_I.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functions_and_computations/complex_jacobi.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -271,18 +284,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.main_program" />
-      <item itemvalue="Python.applet_mk_I" />
       <item itemvalue="Python.applet_mk_I (1)" />
       <item itemvalue="Python.graphics_debugger" />
       <item itemvalue="Python.debug_file" />
+      <item itemvalue="Python.complex_jacobi" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.debug_file" />
         <item itemvalue="Python.main_program" />
+        <item itemvalue="Python.complex_jacobi" />
+        <item itemvalue="Python.debug_file" />
         <item itemvalue="Python.graphics_debugger" />
         <item itemvalue="Python.applet_mk_I (1)" />
-        <item itemvalue="Python.applet_mk_I" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +321,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50158983" side_tool="true" weight="0.28085867" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3291592" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49841017" weight="0.3452594" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49841017" visible="true" weight="0.3452594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3291592" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -357,7 +370,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
     <entry file="file://$PROJECT_DIR$/mKdV_spectrum_01.py" />
     <entry file="file://$PROJECT_DIR$/mKdV/WeierstrassToJacobi/weierstrass_ellip_library.py" />
@@ -490,15 +502,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions_and_computations/solution_forms_for_C_equals_zero.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" selection-start-line="14" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="697">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions_and_computations/weierstrass_elliptic_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1548">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="1207">
+          <caret line="76" column="17" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -507,18 +519,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions_and_computations/debug_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+        <state relative-caret-position="-549">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions_and_computations/complex_jacobi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="37" column="13" lean-forward="true" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
+          <folding>
+            <element signature="e#95#113#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions_and_computations/main_program.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="35" column="77" selection-start-line="35" selection-start-column="77" selection-end-line="35" selection-end-column="77" />
-          <folding>
-            <element signature="e#528#544#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="231">
+          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
         </state>
       </provider>
     </entry>

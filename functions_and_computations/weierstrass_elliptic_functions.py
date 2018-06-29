@@ -83,13 +83,13 @@ def PPrime(e1, e2, e3, z):
     m = np.real((e2 - e3) / (e1 - e3))
     if Delta > 0:
         zs = np.lib.scimath.sqrt(e1 - e3) * z
-        ellip = scipy.special.ellipj(np.real(zs), m)
+        ellip = scipy.special.ellipj(zs, m)
         sn, cn, dn = ellip[0], ellip[1], ellip[2]
         retval = -2 * (np.lib.scimath.sqrt((e1 - e3) ** 3)) * cn * dn / (sn ** 3)
     elif Delta < 0:
         H2 = 2 * (e2 ** 2) + e1 * e3
         zp = 2 * z * np.lib.scimath.sqrt(H2)
-        ellip = scipy.special.ellipj(np.real(zp), m)
+        ellip = scipy.special.ellipj(zp, m)
         sn, cn, dn = ellip[0], ellip[1], ellip[2]
         retval = -4 * (np.lib.scimath.sqrt(H2 ** 3)) * sn * dn / ((1 - cn) ** 2)
 
